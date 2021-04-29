@@ -1,5 +1,4 @@
 # 283-assignment2
-# CMPE-283-Assignments
 ## Team Members:
 ### Jinxuan Hu(013728936)
 ### Xuan Shi ()
