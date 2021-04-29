@@ -23,7 +23,7 @@
 	`$ reboot`
 	
 5. After the first build, verify that the newest version kernel can be used after rebooting:  
-	`uname -a `
+	`uname -a `.  
 	kernel version is 5.12.0
 
 ### Modify the CPUID emulation code
