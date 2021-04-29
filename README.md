@@ -3,17 +3,17 @@
 ### Jinxuan Hu(013728936)
 ### Xuan Shi ()
 
-## Contribution 
+## Contribution :
 ### Jinxuan Hu --- Build the kernel, modify the file vmx.c and create the documentation. 
 ### Xuan Shi ---- Build the kernel, modify the file cpuid.c and create the test file. 
 
-## Steps
+## Steps:
 ### Build the kernel for the first time
 
 1. Clone  the linux repository by using the following command: .
 	` $git clone https://github.com/torvalds/linux.git`
 2. Install all the necessary packages required to compile by using this command:
-	`$ sudo bash` 
+	`$ sudo bash`                   
 	`$ apt-get install build-essential kernel-package fakeroot libncurses5-dev libssl-dev ccache bison flex libelf-dev` 
 3. Check the current kernel verssion by using this command(the kernel version is "5.8.0-50-generic"):  
 	 `$ uname -a`
