@@ -25,7 +25,7 @@
 	`uname -a `
 	kernel version is 5.12.0
 
-###Modify the CPUID emulation code
+### Modify the CPUID emulation code
 1. Modify the CPUID emulation code in KVM by modifing the following two files. 
 *  In cpuid.c, we created a new cpuid leaf in the function `kvm_emulate_cpuid`.  
 *  In vmx.c, we defined two global variables: `no_of_ exist` and `cpu_cycles` to calculate the number of exits and processing time of each exit. In addition, the `vmx_handle_exit` function can be used to calculate the number of exits and total time spend processing all exits.
