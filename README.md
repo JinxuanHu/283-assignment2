@@ -9,8 +9,10 @@ Jinxuan Hu (013728936) Xuan Shi(013856401)
 ## Steps:
 ### Build the kernel for the first time
 
+0. fork the linux repository to https://github.com/xuanwumay/linux
+
 1. Clone  the linux repository by using the following command:                                                                                           
-	* ` $git clone https://github.com/torvalds/linux.git`
+	* ` $git clone https://github.com/xuanwumay/linux`
 2. Install all the necessary packages required to compile by using this command:                                                                         
 	* `$ sudo bash`                                               
 	* `$ apt-get install build-essential kernel-package fakeroot libncurses5-dev libssl-dev ccache bison flex libelf-dev` 
@@ -31,8 +33,8 @@ Jinxuan Hu (013728936) Xuan Shi(013856401)
 
 ### Modify the CPUID emulation code
 1. Modify the CPUID emulation code in KVM by modifing the following two files. 
-*  In cpuid.c, we created a new cpuid leaf in the function `kvm_emulate_cpuid`,which is to test the number of exits while eax == 0x4FFFFFFF   .[]()
-*  In vmx.c, we defined two global variables: `num_of_ exist` and `exit_cpu_cycles` to calculate the number of exits and processing time of each exit. In addition, the `vmx_handle_exit` function can be used to calculate the number of exits and total time spend processing all exits.
+*  In cpuid.c, we defined two global variables: `num_exist` and `exit_cpu_cycles` to calculate the number of exits and processing time of exits. We modified the function `kvm_emulate_cpuid` to read the number of exits and the cpu cycles in exists while eax == 0x4FFFFFFF.
+*  In vmx.c,  we modified the `vmx_handle_exit` function to calculate the number of exits and total time spend processing all exits.
 2. After modfing the files, rebuild the kernel by using the command for initial build.   
 3. Reboot VM by using command:  
 * `$ reboot`
@@ -55,7 +57,7 @@ Jinxuan Hu (013728936) Xuan Shi(013856401)
 	* `sudo apt-get install cpuid`
 
 ## Test and output
-1. Create test file and test which is to calculate the number of exits and processing time of the exits.
+1. Create test file and test which is to acquire the number of exits and processing time of the exits.
 2. Compile the testfile 
 	`sudo apt-get install make`
 	`sudo apt-get install gcc`
@@ -66,6 +68,7 @@ Jinxuan Hu (013728936) Xuan Shi(013856401)
 
 ### Comment on the frequency of exits 
 Q: Does the number of exits increase at a stable rate? Or are there more exits performed during certain VM operations?
+
 A: From the last nine output, the number of exits is increasing. However, the increase rate is not stable while there are big difference of 2000 and small difference of 300.
 
 Approximately how many exits does a full VM boot entail? 
