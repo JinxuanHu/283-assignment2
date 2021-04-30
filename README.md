@@ -21,9 +21,12 @@
 4. Build the kernel for the first time by using the following commands:         
 	`$ cp /boot/config-5.8.0-50-generic    ./.config `  .
 	`$ make oldconfig` (just use the default for everything).   
-	`$ sudo make -j 2` 
-	`$ sudo make -j 2 modules && make install && make modules-install`
+	`$ make -j 2`
+	
+	`$ sudo make -j 2 modules`
+	
 	`$ sudo make install`
+	
 	`$ sudo make modules-install`
 	`$ reboot`	
 5. After the initial build, verify that the newest version kernel can be used after rebooting:  
