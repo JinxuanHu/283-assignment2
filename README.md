@@ -13,7 +13,7 @@
 1. Clone  the linux repository by using the following command: .
 	` $git clone https://github.com/torvalds/linux.git`
 2. Install all the necessary packages required to compile by using this command:
-	`$ sudo bash`                   
+	`$ sudo bash`                                               
 	`$ apt-get install build-essential kernel-package fakeroot libncurses5-dev libssl-dev ccache bison flex libelf-dev` 
 3. Check the current kernel verssion by using this command:  
 	 `$ uname -a`
