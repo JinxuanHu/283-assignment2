@@ -64,8 +64,9 @@ Jinxuan Hu (013728936) Xuan Shi(013856401)
 3. Output:
 <image src = "https://github.com/xuanwumay/283-assignment2/blob/master/output.png">
 
+### Comment on the frequency of exits 
+Q: Does the number of exits increase at a stable rate? Or are there more exits performed during certain VM operations?
+A: From the last nine output, the number of exits is increasing. However, the increase rate is not stable while there are big difference of 2000 and small difference of 300.
 
-
-
-
+Approximately how many exits does a full VM boot entail? 
 
