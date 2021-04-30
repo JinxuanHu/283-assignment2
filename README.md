@@ -52,8 +52,8 @@
 	`sudo virt-manager`
 6.  Download Ubuntu20.04 and install it.
 7.  Open the inner VM terminal and install cpuid by using:
-	`sudo apt-get update `
-	`sudo apt-get install cpuid`
+	* `sudo apt-get update `
+	* `sudo apt-get install cpuid`
 
 ## Test and output
 1. Create test file and test which is to calculate the number of exits and processing time of the exits.
