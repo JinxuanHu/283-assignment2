@@ -33,7 +33,7 @@
 ### Modify the CPUID emulation code
 1. Modify the CPUID emulation code in KVM by modifing the following two files. 
 *  In cpuid.c, we created a new cpuid leaf in the function `kvm_emulate_cpuid`,which is to test the number of exits while eax == 0x4FFFFFFF   .[]()
-*  In vmx.c, we defined two global variables: `num_of_ exist` and `cpu_cycles` to calculate the number of exits and processing time of each exit. In addition, the `vmx_handle_exit` function can be used to calculate the number of exits and total time spend processing all exits.
+*  In vmx.c, we defined two global variables: `num_of_ exist` and `exit_cpu_cycles` to calculate the number of exits and processing time of each exit. In addition, the `vmx_handle_exit` function can be used to calculate the number of exits and total time spend processing all exits.
 2. After modfing the files, rebuild the kernel by using the command for initial build.   
 3. Reboot VM by using command:  
 * `$ reboot`
