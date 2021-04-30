@@ -72,4 +72,4 @@ Q: Does the number of exits increase at a stable rate? Or are there more exits p
 A: From the last nine output, the number of exits is increasing. However, the increase rate is not stable while there are big difference of 2000 and small difference of 300.
 
 Approximately how many exits does a full VM boot entail? 
-
+47000000
