@@ -73,4 +73,4 @@ A: From the last nine output, the number of exits is increasing. However, the in
 
 Approximately how many exits does a full VM boot entail? 
 
-47000000
+43000000
