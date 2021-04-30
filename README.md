@@ -11,12 +11,12 @@
 ### Build the kernel for the first time
 
 1. Clone  the linux repository by using the following command:                                                                                           
-	` $git clone https://github.com/torvalds/linux.git`
+	* ` $git clone https://github.com/torvalds/linux.git`
 2. Install all the necessary packages required to compile by using this command:                                                                         
-	`$ sudo bash`                                               
-	`$ apt-get install build-essential kernel-package fakeroot libncurses5-dev libssl-dev ccache bison flex libelf-dev` 
+	* `$ sudo bash`                                               
+	* `$ apt-get install build-essential kernel-package fakeroot libncurses5-dev libssl-dev ccache bison flex libelf-dev` 
 3. Check the current kernel verssion by using this command:  
-	 `$ uname -a`  
+	* `$ uname -a`  
 	  the kernel version is "5.8.0-50-generic".
 4. Build the kernel for the first time by using the following commands:         
 	* 	`$ cp /boot/config-5.8.0-50-generic    ./.config `  
@@ -27,7 +27,7 @@
 	* 	`$ sudo make modules-install`
 	* 	`$ reboot`	
 5. After the initial build, verify that the newest version kernel can be used after rebooting:  
-	`uname -a `.  
+	* `uname -a `.  
 	current kernel version is 5.12.0
 
 ### Modify the CPUID emulation code
@@ -36,7 +36,7 @@
 *  In vmx.c, we defined two global variables: `num_of_ exist` and `cpu_cycles` to calculate the number of exits and processing time of each exit. In addition, the `vmx_handle_exit` function can be used to calculate the number of exits and total time spend processing all exits.
 2. After modfing the files, rebuild the kernel by using the command for initial build.   
 3. Reboot VM by using command:  
-`$ reboot`
+* `$ reboot`
 
 ### Inatall nested VM 
 1. Install the nested VM with the following guild:
