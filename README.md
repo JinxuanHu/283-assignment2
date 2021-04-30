@@ -42,14 +42,14 @@
 1. Install the nested VM with the following guild:
 	https://phoenixnap.com/kb/ubuntu-install-kvm#ftoc-heading-5
 2. Install essential KVM packages with the following command:
-	`sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils`.
+	* `sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils`.
 3.  Check the status of libvirtd:
-	`sudo systemctl status libvirtd`
+	* `sudo systemctl status libvirtd`
 	 the output returns an active (running) status.
 4.  Install virt-manager by using the following command:
-  	`sudo apt install virt-manager`
+  	* `sudo apt install virt-manager`
 5.  Start virt-manager by using the following command:
-	`sudo virt-manager`
+	* `sudo virt-manager`
 6.  Download Ubuntu20.04 and install it.
 7.  Open the inner VM terminal and install cpuid by using:
 	* `sudo apt-get update `
