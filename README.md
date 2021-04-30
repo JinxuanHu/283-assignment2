@@ -62,7 +62,7 @@ Jinxuan Hu (013728936) Xuan Shi(013856401)
 	`gcc test.c -o test`
 	`./test`
 3. Output:
-<image src = "https://github.com/xuanwumay/283-assignment2/blob/master/output.png">
+<image src = "https://github.com/xuanwumay/283-assignment2/blob/master/output_of_exits.png">
 
 ### Comment on the frequency of exits 
 Q: Does the number of exits increase at a stable rate? Or are there more exits performed during certain VM operations?
