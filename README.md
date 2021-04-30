@@ -1,7 +1,6 @@
 # 283-assignment2
 ## Team Members:
-### Jinxuan Hu(013728936)
-### Xuan Shi ()
+Jinxuan Hu (013728936) Xuan Shi(013856401)
 
 ## Contribution :
 ### Jinxuan Hu --- Build the kernel, modify the file vmx.c, compile the test file  and create the documentation. 
@@ -63,6 +62,8 @@
 	`gcc test.c -o test`
 	`./test`
 3. Output:
+<image src = "https://github.com/xuanwumay/283-assignment2/blob/master/output.png">
+
 
 
 
