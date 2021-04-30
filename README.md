@@ -19,7 +19,7 @@
 	 `$ uname -a`
 	  the kernel version is "5.8.0-50-generic".
 4. Build the kernel for the first time by using the following commands:         
-	`$ cp /boot/config-5.8.0-50-generic    ./.config `  
+	`$ cp /boot/config-5.8.0-50-generic    ./.config `  .
 	`$ make oldconfig` (just use the default for everything).   
 	`$ sudo make -j 2` 
 	`$ sudo make -j 2 modules && make install && make modules-install`
